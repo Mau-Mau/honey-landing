@@ -6,7 +6,12 @@
   color: $color-white;
   font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
+  padding: 20px;
   border: 1.5px solid $color-orange;
+  border-radius: 50px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
 }
 
 .button--additional {

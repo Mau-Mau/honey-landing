@@ -1,0 +1,21 @@
+.nav-list {
+  display: none;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  background-color: $color-white;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    width: auto;
+  }
+}

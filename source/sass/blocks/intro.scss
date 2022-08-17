@@ -16,3 +16,25 @@
     padding: 60px 100px 0 100px;
   }
 }
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.intro__description {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.intro__description:last-child {
+  margin-bottom: 0;
+}

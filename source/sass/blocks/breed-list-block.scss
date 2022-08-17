@@ -1,0 +1,15 @@
+.breed-list-block {
+  display: grid;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 60px;
+  }
+}
+
+.breed-list-block > .button {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
