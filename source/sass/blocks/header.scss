@@ -1,3 +1,7 @@
 .header {
   padding: 15px 20px 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 100px 30px 100px;
+  }
 }

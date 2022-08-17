@@ -1,11 +1,21 @@
 .buy-honey {
+  color: $color-white;
+
+  @media(min-width: $tablet-width) {
+    padding: 0 100px 0 100px;
+  }
+}
+
+.buy-honey__wrapper {
   background-image: url("../../img/hives.jpg");
   background-color: $color-green-dark;
   background-clip: border-box;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: $color-white;
-
   padding: 40px 20px 40px 20px;
+
+  @media(min-width: $tablet-width) {
+    padding: 60px 66px 60px 66px;
+  }
 }

@@ -13,7 +13,11 @@
   color: $color-blue;
   word-break: break-word;
 
-  width: 375px;
+  width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
