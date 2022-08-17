@@ -12,7 +12,7 @@
   <body class="page__body body">
     <header class="page__header header">
       <a class="header__logo logo">
-        <img class="header__logo-image image" src="./img/honey.png" width="39" height="50" alt="Логотип сайта пасеки">
+        <img class="header__logo-image logo-image" src="./img/honey.png" width="39" height="50" alt="Логотип сайта пасеки">
       </a>
       <nav class="header__nav main-nav">
         <div class="main-nav__menu-block menu-block">
@@ -35,7 +35,7 @@
           </li>
         </ul>
       </nav>
-      <a class="header__link link button" href="#buy-honey">Купить мёд</a>
+      <a class="header__link button" href="#buy-honey">Купить мёд</a>
     </header>
 
 
@@ -43,52 +43,55 @@
       <h1 class="visually-hidden">Сайт-визитка пасеки в с.Верх-Неня Алтайского края</h1>
 
       <section id="introduction" class="main__intro intro">
-        <h2 class="intro__title title title--main">Дорога в мир пчёл и здоровья начинается здесь</h2>
-        <p>Более 50 лет мы держим пасеку и развиваем ее. Она большая, 90 домиков. Вокруг алтайское разнотравье, а еще гречишные поля. Каждый год пчёлы дают большой урожай мёда. Приезжайте и посмотрите на всё своими глазами.</p>
-        <p>Здесь можно посмотреть на наших пчёл, на места их обитания, а также сделать заказ на мёд.</p>
+        <div class="intro__cover"></div>
+        <div class="intro__wrapper">
+          <h2 class="intro__title section-title section-title--intro">Дорога в мир пчёл и здоровья начинается здесь</h2>
+          <p class="intro__description text-content">Более 50 лет мы держим пасеку и развиваем ее. Она большая, 90 домиков. Вокруг алтайское разнотравье, а еще гречишные поля. Каждый год пчёлы дают большой урожай мёда. Приезжайте и посмотрите на всё своими глазами.</p>
+          <p class="intro__description text-content">Здесь можно посмотреть на наших пчёл, на места их обитания, а также сделать заказ на мёд.</p>
+        </div>
       </section>
 
       <section id="bee-breed" class="main__bee-breed bee-breed">
-        <h2 class="bee-breed__title title title--section">Виды пчёл</h2>
-        <p>Мы держим несколько видов пчёл. Каждый вид отличается поведением и приносит немного другой мёд.</p>
+        <h2 class="bee-breed__title section-title">Виды пчёл</h2>
+        <p class="bee-breed__description text-content">Мы держим несколько видов пчёл. Каждый вид отличается поведением и приносит немного другой мёд.</p>
         <div class="bee-breed__list-block breed-list-block">
           <ul class="breed-list-block__list breed-list">
             <li class="breed-list__item breed-item">
-              <img class="breed-item__image image" src="./img/bee-middle-russian.webp" width="335" height="250" alt="Среднерусская порода пчёл">
+              <img class="breed-item__image breed-image image" src="./img/bee-middle-russian.jpg" width="335" height="186" alt="Среднерусская порода пчёл">
               <div class="breed-item__info-block breed-info">
-                <h3 class="breed-info__title title title--item">Среднерусская порода</h3>
-                <p class="breed-info__description description">Cчитается одной из самых продуктивных по производству меда. Пчелы почти безболезненно переносят период безоблетный период зимовки. Мигрируют часто, способны распространяться на большие территории без участия человека.</p>
+                <h3 class="breed-info__title breed-title">Среднерусская порода</h3>
+                <p class="breed-info__description text-content">Cчитается одной из самых продуктивных по производству меда. Пчелы почти безболезненно переносят период безоблетный период зимовки. Мигрируют часто, способны распространяться на большие территории без участия человека.</p>
                 <a class="breed-info__button button" href="https://agrostory.com/info-centre/zivotnovodstvo/srednerusskaya-poroda-pchyel-i-eye-osobennosti/">Подробнее</a>
               </div>
             </li>
             <li class="breed-list__item breed-item">
-              <img class="breed-item__image image" src="./img/bee-ukranian.webp" width="335" height="250" alt="Украинская степная порода пчёл">
+              <img class="breed-item__image breed-image image" src="./img/bee-ukranian.jpg" width="335" height="186" alt="Украинская степная порода пчёл">
               <div class="breed-item__info-block breed-info">
-                <h3 class="breed-info__title title title--item">Украинская степная</h3>
-                <p class="breed-info__description description">Среди очевидных плюсов породы — высокая продуктивность, выносливость, способность активно защищать свои гнезда от вредителей, склонность к поддержанию улья в образцовой чистоте. К недостаткам породы относят сбор нектара только с растений, содержащих повышенное содержание сахара.</p>
+                <h3 class="breed-info__title breed-title">Украинская степная</h3>
+                <p class="breed-info__description text-content">Среди очевидных плюсов породы — высокая продуктивность, выносливость, способность активно защищать свои гнезда от вредителей, склонность к поддержанию улья в образцовой чистоте. К недостаткам породы относят сбор нектара только с растений, содержащих повышенное содержание сахара.</p>
                 <a class="breed-info__button button" href="https://agrostory.com/info-centre/zivotnovodstvo/ukrainskaya-stepnaya-poroda-pchyel-osobennosti-kharakteristiki/">Подробнее</a>
               </div>
             </li>
             <li class="breed-list__item breed-item">
-              <img class="breed-item__image image" src="./img/bee-bakfast.webp" width="335" height="250" alt="Порода пчёл Бакфаст">
+              <img class="breed-item__image breed-image image" src="./img/bee-bakfast.jpg" width="335" height="186" alt="Порода пчёл Бакфаст">
               <div class="breed-item__info-block breed-info">
-                <h3 class="breed-info__title title title--item">Бакфаст</h3>
-                <p class="breed-info__description description">Порода известна своей любовью к чистоте внутри улья, а также способностью летать за взятком на дальние расстояния. Одни из наиболее продуктивных и плодовитых медоносных пчел. Хорошо приспосабливаются к изменениям в окружающей среде.</p>
+                <h3 class="breed-info__title breed-title">Бакфаст</h3>
+                <p class="breed-info__description text-content">Порода известна своей любовью к чистоте внутри улья, а также способностью летать за взятком на дальние расстояния. Одни из наиболее продуктивных и плодовитых медоносных пчел. Хорошо приспосабливаются к изменениям в окружающей среде.</p>
                 <a class="breed-info__button button" href="https://agrostory.com/info-centre/knowledge-lab/pchely-porody-bakfast/">Подробнее</a>
               </div>
             </li>
           </ul>
-          <button class="breed-list-block__button button button--inverse" type="button">Показать ещё</button>
+          <button class="breed-list-block__button button button--additional" type="button">Показать ещё</button>
         </div>
       </section>
 
       <section id="faq" class="main__faq faq">
-        <h2 class="faq__title title title--section">Вопросы и ответы</h2>
-        <div class="faq__list-section questions-section">
-          <ul class="questions-section__question-list question-list question-list--top">
+        <h2 class="faq__title section-title title--section">Вопросы и ответы</h2>
+        <div class="faq__list-block questions-block">
+          <ul class="questions-block__question-list question-list question-list--top">
             <li class="question-list__item question-item">
               <div class="question-item__title-block question-title-block">
-                <p class="question-item__title">Можно ли к вам приехать на пасеку?</p>
+                <p class="question-item__title question-title">Можно ли к вам приехать на пасеку?</p>
                 <button class="question-item__more-toggle more-toggle">
                   <span class="visually-hidden">Показать ответ</span>
                 </button>
@@ -97,7 +100,7 @@
             </li>
             <li class="question-list__item question-item">
               <div class="question-item__title-block question-title-block">
-                <p class="question-item__title">Больно ли кусаются пчёлы?</p>
+                <p class="question-item__title question-title">Больно ли кусаются пчёлы?</p>
                 <button class="question-item__more-toggle more-toggle">
                   <span class="visually-hidden">Показать ответ</span>
                 </button>
@@ -106,7 +109,7 @@
             </li>
             <li class="question-list__item question-item">
               <div class="question-item__title-block question-title-block">
-                <p class="question-item__title">Долго ли до вас ехать и на чём?</p>
+                <p class="question-item__title question-title">Долго ли до вас ехать и на чём?</p>
                 <button class="question-item__more-toggle more-toggle">
                   <span class="visually-hidden">Показать ответ</span>
                 </button>
@@ -114,10 +117,10 @@
                 <p class="question-item__answer">Добраться до пасеки можно на автомобиле. От Барнаула примерно 300 км. Дорога занимает примерно 5 часов.</p>
             </li>
           </ul>
-          <ul class="questions-section__question-list question-list">
+          <ul class="questions-block__question-list question-list">
             <li class="question-list__item question-item">
               <div class="question-item__title-block question-title-block">
-                <p class="question-item__title">Сколько у вас сортов мёда?</p>
+                <p class="question-item__title question-title">Сколько у вас сортов мёда?</p>
                 <button class="question-item__more-toggle more-toggle">
                   <span class="visually-hidden">Показать ответ</span>
                 </button>
@@ -126,7 +129,7 @@
             </li>
             <li class="question-list__item question-item">
               <div class="question-item__title-block question-title-block">
-                <p class="question-item__title">Можно приехать попробовать мёд на вкус?</p>
+                <p class="question-item__title question-title">Можно приехать попробовать мёд на вкус?</p>
                 <button class="question-item__more-toggle more-toggle">
                   <span class="visually-hidden">Показать ответ</span>
                 </button>
@@ -135,7 +138,7 @@
             </li>
             <li class="question-list__item question-item">
               <div class="question-item__title-block question-title-block">
-                <p class="question-item__title">Можно ли научиться пасечному делу?</p>
+                <p class="question-item__title question-title">Можно ли научиться пасечному делу?</p>
                 <button class="question-item__more-toggle more-toggle">
                   <span class="visually-hidden">Показать ответ</span>
                 </button>
@@ -147,32 +150,32 @@
       </section>
 
       <section id="gallery" class="main__gallery gallery">
-        <h2 class="gallery__title title title--section">Виды на пасеке</h2>
-        <p>Здесь появляется наш вкусный и полезный мёд. Сбор начинается в конце июля.</p>
+        <h2 class="gallery__title section-title title--section">Виды на пасеке</h2>
+        <p class="gallery__description">Здесь появляется наш вкусный и полезный мёд. Сбор начинается в конце июля.</p>
         <div class="gallery__slider slider">
-          <ul class="slider__list slider-list list">
-            <li class="slider-list__item slider-item list-item">
-              <div class="list-item__wrapper">
-                <img class="slider-item__image slider-photo image" src="./img/apiary.jpg" width="335" height="200" alt="Передвижная часть пасеки">
-                <p class="slider-item__text text">Это часть наших домиков, которая перемещается по полям недалеко от поселка.</p>
+          <ul class="slider__list slider-list">
+            <li class="slider-list__item slider-item">
+              <div class="slider-item__wrapper">
+                <img class="slider-item__image slider-image image" src="./img/apiary.jpg" width="335" height="auto" alt="Передвижная часть пасеки">
+                <p class="slider-item__description slider-description">Это часть наших домиков, которая перемещается по полям недалеко от поселка.</p>
               </div>
             </li>
-            <li class="slider-list__item slider-item list-item">
-              <div class="list-item__wrapper">
-                <img class="slider-item__image slider-photo image" src="./img/bee-house.jpg" width="335" height="200" alt="Пчёлы залетают в домик">
-                <p class="slider-item__text text">По вечерам пчёлы прячутся в домике, чтобы отдохнуть от дневных трудов.</p>
+            <li class="slider-list__item slider-item">
+              <div class="slider-item__wrapper">
+                <img class="slider-item__image slider-image image" src="./img/bee-house.jpg" width="335" height="auto" alt="Пчёлы залетают в домик">
+                <p class="slider-item__description slider-description">По вечерам пчёлы прячутся в домике, чтобы отдохнуть от дневных трудов.</p>
               </div>
             </li>
-            <li class="slider-list__item slider-item list-item">
-              <div class="list-item__wrapper">
-                <img class="slider-item__image slider-photo image" src="./img/honeycomb.jpg" width="335" height="200" alt="Соты с пчёлами">
-                <p class="slider-item__text text">Результатом усилий пасечника будет мёд, вкусный и полезный. Вкус мёда у каждого сорта разный.</p>
+            <li class="slider-list__item slider-item">
+              <div class="slider-item__wrapper">
+                <img class="slider-item__image slider-image image" src="./img/honeycomb.jpg" width="335" height="auto" alt="Соты с пчёлами">
+                <p class="slider-item__description slider-description">Результатом усилий пасечника будет мёд, вкусный и полезный. Вкус мёда у каждого сорта разный.</p>
               </div>
             </li>
-            <li class="slider-list__item slider-item list-item">
-              <div class="list-item__wrapper">
-                <img class="slider-item__image slider-photo image" src="./img/hive.jpg" width="335" height="200" alt="Рой пчёл на ветке дерева">
-                <p class="slider-item__text text">Летом нужно следить, не вылетел ли новый рой из домика. В этом случае нужно срочно садить его в роялку и селить в новый домик.</p>
+            <li class="slider-list__item slider-item">
+              <div class="slider-item__wrapper">
+                <img class="slider-item__image slider-image image" src="./img/hive.jpg" width="335" height="auto" alt="Рой пчёл на ветке дерева">
+                <p class="slider-item__description slider-description">Летом нужно следить, не вылетел ли новый рой из домика. В этом случае нужно срочно садить его в роялку и селить в новый домик.</p>
               </div>
             </li>
           </ul>
@@ -187,90 +190,89 @@
 
       <section id="buy-honey" class="main__buy-honey buy-honey">
         <div class="buy-honey__text-wrapper">
-          <h2 class="buy-honey__title title title--section">Оставьте заявку на мёд, и мы как можно скорее привезем его Вам!</h2>
-          <p class="buy-honey__description">Позвоним в течение часа и всё расскажем (в рабочее время, с 9:00 до 23:00)</p>
-          <p class="buy-honey__description">Принимаем заказы от 1 до 100 литров</p>
-          <img class="buy-honey__image image" src="./img/honey.png" width="335" height="422" alt="Баночка мёда">
+          <h2 class="buy-honey__title section-title section-title--buy">Оставьте заявку на мёд, и мы как можно скорее привезем его Вам!</h2>
+          <p class="buy-honey__description buy-description">Позвоним в течение часа и всё расскажем (в рабочее время, с 9:00 до 23:00)</p>
+          <p class="buy-honey__description buy-description">Принимаем заказы от 1 до 100 литров</p>
         </div>
 
         <form class="buy-honey__form order-form" method="POST" action="#">
           <ul class="order-form__list field-list field-list--contacts">
-            <li class="order-form__item field">
+            <li class="field-list__item field">
               <label class="field__label" for="first-name">
-                <span class="field__title">Ваше имя*</span>
+                <span class="field__title field-title">Ваше имя*</span>
               </label>
-              <input class="field__input text-input" id="first-name" name="first-name" type="text" maxlength="50" required>
+              <input class="field__input text-input" id="first-name" name="first-name" type="text" maxlength="50" placeholder="Кирилл" required>
             </li>
-            <li class="order-form__item field">
+            <li class="field-list__item field">
               <label class="field__label" for="family-name">
-                <span class="field__title">Ваша фамилия*</span>
+                <span class="field__title field-title">Ваша фамилия*</span>
               </label>
-              <input class="field__input text-input" id="family-name" name="family-name" type="text" maxlength="50" required>
+              <input class="field__input text-input" id="family-name" name="family-name" type="text" maxlength="50" placeholder="Иванов" required>
             </li>
-            <li class="order-form__item field">
+            <li class="field-list__item field">
               <label class="field__label" for="phone">
-                <span class="field__title">Ваш номер телефона*</span>
+                <span class="field__title field-title">Ваш номер телефона*</span>
               </label>
-              <input class="field__input text-input" id="phone" name="phone" type="tel" required>
+              <input class="field__input text-input" id="phone" name="phone" type="tel" placeholder="+7 (000) 000 00 00" required>
             </li>
-            <li class="order-form__item field">
+            <li class="field-list__item field">
               <label class="field__label" for="email">
-                <span class="field__title">Электронная почта*</span>
+                <span class="field__title field-title">Электронная почта*</span>
               </label>
               <input class="field__input text-input" id="email" name="email" type="email" required>
             </li>
-            <li class="order-form__item field">
+            <li class="field-list__item field">
               <label class="field__label" for="order-comment">
-                <span class="field__title">Комментарии к заказу</span>
+                <span class="field__title field-title">Комментарии к заказу</span>
               </label>
-              <textarea class="field__input text-input" id="order-comment" name="order-comment" rows="3" maxlength="150"></textarea>
+              <textarea class="field__input text-input" id="order-comment" name="order-comment" rows="3" maxlength="150" placeholder="Ваше сообщение"></textarea>
             </li>
           </ul>
 
           <ul class="order-form__list field-list field-list--honey-variety">
-            <li class="order-form__item radio">
-              <input class="radio__input visually-hidden" id="buckwheat-honey" name="honey-variety" type="radio" value="buckwheat-honey" checked>
-              <label class="radio__label radio-label" for="buckwheat-honey">
-                <span class="radio__title text-input">Гречишный</span>
+            <li class="field-list__item radio-button">
+              <input class="radio-button__input visually-hidden" id="buckwheat-honey" name="honey-variety" type="radio" value="buckwheat-honey" checked>
+              <label class="radio-button__label radio-button-label" for="buckwheat-honey">
+                <span class="radio-button__title radio-title">Гречишный</span>
               </label>
             </li>
 
-            <li class="order-form__item radio">
-              <input class="radio__input visually-hidden" id="motley-grass-honey" name="honey-variety" type="radio" value="motley-grass-honey">
-              <label class="radio__label radio-label" for="motley-grass-honey">
-                <span class="radio__title text-input">Разнотравье</span>
+            <li class="field-list__item radio-button">
+              <input class="radio-button__input visually-hidden" id="motley-grass-honey" name="honey-variety" type="radio" value="motley-grass-honey">
+              <label class="radio-button__label radio-button-label" for="motley-grass-honey">
+                <span class="radio-button__title radio-title">Разнотравье</span>
               </label>
             </li>
 
-            <li class="order-form__item radio">
-              <input class="radio__input visually-hidden" id="taiga-honey" name="honey-variety" type="radio" value="taiga-honey">
-              <label class="radio__label radio-label" for="taiga-honey">
-                <span class="radio__title text-input">Таёжный</span>
+            <li class="field-list__item radio-button">
+              <input class="radio-button__input visually-hidden" id="taiga-honey" name="honey-variety" type="radio" value="taiga-honey">
+              <label class="radio-button__label radio-button-label" for="taiga-honey">
+                <span class="radio-button__title radio-title">Таёжный</span>
               </label>
             </li>
           </ul>
 
           <div class="order-form__input field">
             <label class="field__label" for="amount-of-liters">
-              <span class="field__title">Количество литров</span>
+              <span class="field__title field-title">Количество литров</span>
             </label>
             <input class="field__input text-input" id="amount-of-liters" name="amount-of-liters" type="number" min="1" max="100" required>
           </div>
 
           <div class="order-form__summary order-summary">
-            <div class="order-form__price order-price">
-              <p class="order-price__description price-description">Цена</p>
-              <p class="order-price__value price-value">400 р.</p>
+            <div class="order-form__price price-block">
+              <p class="price-block__description price-block-title">Цена</p>
+              <p class="price-block__value price-value">400 р.</p>
             </div>
-            <div class="order-form__total order-total">
-              <p class="order-total__description total-description">Стоимость</p>
-              <p class="order-total__value total-value">0 р.</p>
+            <div class="order-form__total total-block">
+              <p class="total-block__description total-block-title">Стоимость</p>
+              <p class="total-block__value total-value">0 р.</p>
             </div>
           </div>
 
           <div class="order-form__actions form-actions">
             <button class="form-actions__submit button" type="submit">Отправить отзыв</button>
-            <p class="form-actions__description actions-description">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            <p class="form-actions__description">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
           </div>
         </form>
       </section>
@@ -301,9 +303,9 @@
         </ul>
       </div>
       <div class="footer__copyright copyright">
-        <p class="copyright__text">Разработано Mau_nsk</p>
-        <a class="copyright__phone contact contact--phone" href="tel:+79833080681">+7-983-308-06-81</a>
-        <a class="copyright__link contact contact--email" href="mailto:nina.mau.nsk@gmail.com">nina.mau.nsk@gmail.com</a>
+        <p class="copyright__text copyright-author">Разработано Mau_nsk</p>
+        <a class="copyright__phone copyright-link" href="tel:+79833080681">+7 (983) 308 06 81</a>
+        <a class="copyright__link copyright-link" href="mailto:nina.mau.nsk@gmail.com">nina.mau.nsk@gmail.com</a>
       </div>
     </footer>
   </body>

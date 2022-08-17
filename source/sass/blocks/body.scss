@@ -1,0 +1,21 @@
+.body {
+  background-color: $color-white;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  box-shadow: 0px 0px 35px $page-shadow;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-blue;
+  word-break: break-word;
+
+  width: 375px;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}

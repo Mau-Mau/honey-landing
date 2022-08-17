@@ -1,0 +1,16 @@
+.button {
+  background-color: $color-orange;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: none;
+  border: 1.5px solid $color-orange;
+}
+
+.button--additional {
+  color: $color-blue;
+  background-color: transparent;
+  border-color: $color-blue;
+}

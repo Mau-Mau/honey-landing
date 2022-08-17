@@ -1,0 +1,14 @@
+.intro__cover {
+  background-image: url("../../img/bee-flowers.jpg");
+  background-color: $color-green-dark;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 210px;
+  padding: 0;
+}
+
+.intro__wrapper {
+  padding: 30px 23px 0 23px;
+}
