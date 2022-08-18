@@ -1,0 +1,15 @@
+.question-item {
+  border: 1.5px solid $color-blue;
+  border-radius: 50px;
+  padding: 12px 20px 12px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 30px 23px 30px;
+  }
+}
+
+.question-item__answer {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}

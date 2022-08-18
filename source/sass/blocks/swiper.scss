@@ -1,0 +1,40 @@
+.swiper-container {
+  width: 335px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 568px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    right: -50px;
+  }
+}
+
+.swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    left: -50px;
+  }
+}
+
+.swiper-pagination {
+  position: inherit;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}

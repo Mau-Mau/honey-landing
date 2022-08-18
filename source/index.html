@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пасека в с.Верх-Неня</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
     <meta property="og:title" content="Пасека в с.Верх-Неня">
     <meta property="og:description" content="Продажа мёда. Экскурсии на пасеку.">
   </head>
@@ -151,40 +151,37 @@
 
       <section id="gallery" class="main__gallery gallery">
         <h2 class="gallery__title section-title title--section">Виды на пасеке</h2>
-        <p class="gallery__description">Здесь появляется наш вкусный и полезный мёд. Сбор начинается в конце июля.</p>
-        <div class="gallery__slider slider">
-          <ul class="slider__list slider-list">
-            <li class="slider-list__item slider-item">
-              <div class="slider-item__wrapper">
-                <img class="slider-item__image slider-image image" src="./img/apiary.jpg" width="335" height="auto" alt="Передвижная часть пасеки">
-                <p class="slider-item__description slider-description">Это часть наших домиков, которая перемещается по полям недалеко от поселка.</p>
+        <p class="gallery__description text-content">Здесь появляется наш вкусный и полезный мёд. Сбор начинается в конце июля.</p>
+
+
+
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <!-- Оболочка для слайдера -->
+            <div class="swiper-wrapper">
+              <!-- Оболочка для отдельного слайда -->
+              <div class="swiper-slide slider-item">
+                  <img class="slider-item__image slider-image image" src="./img/apiary.jpg" width="335" height="auto" alt="Передвижная часть пасеки">
+                  <p class="slider-item__description slider-description">Это часть наших домиков, которая перемещается по полям недалеко от поселка.</p>
               </div>
-            </li>
-            <li class="slider-list__item slider-item">
-              <div class="slider-item__wrapper">
-                <img class="slider-item__image slider-image image" src="./img/bee-house.jpg" width="335" height="auto" alt="Пчёлы залетают в домик">
-                <p class="slider-item__description slider-description">По вечерам пчёлы прячутся в домике, чтобы отдохнуть от дневных трудов.</p>
+              <div class="swiper-slide slider-item">
+                  <img class="slider-item__image slider-image image" src="./img/bee-house.jpg" width="335" height="auto" alt="Пчёлы залетают в домик">
+                  <p class="slider-item__description slider-description">По вечерам пчёлы прячутся в домике, чтобы отдохнуть от дневных трудов.</p>
               </div>
-            </li>
-            <li class="slider-list__item slider-item">
-              <div class="slider-item__wrapper">
-                <img class="slider-item__image slider-image image" src="./img/honeycomb.jpg" width="335" height="auto" alt="Соты с пчёлами">
-                <p class="slider-item__description slider-description">Результатом усилий пасечника будет мёд, вкусный и полезный. Вкус мёда у каждого сорта разный.</p>
+              <div class="swiper-slide slider-item">
+                  <img class="slider-item__image slider-image image" src="./img/honeycomb.jpg" width="335" height="auto" alt="Соты с пчёлами">
+                  <p class="slider-item__description slider-description">Результатом усилий пасечника будет мёд, вкусный и полезный. Вкус мёда у каждого сорта разный.</p>
               </div>
-            </li>
-            <li class="slider-list__item slider-item">
-              <div class="slider-item__wrapper">
-                <img class="slider-item__image slider-image image" src="./img/hive.jpg" width="335" height="auto" alt="Рой пчёл на ветке дерева">
-                <p class="slider-item__description slider-description">Летом нужно следить, не вылетел ли новый рой из домика. В этом случае нужно срочно садить его в роялку и селить в новый домик.</p>
+              <div class="swiper-slide slider-item">
+                  <img class="slider-item__image slider-image image" src="./img/hive.jpg" width="335" height="auto" alt="Рой пчёл на ветке дерева">
+                  <p class="slider-item__description slider-description">Летом нужно следить, не вылетел ли новый рой из домика. В этом случае нужно срочно садить его в роялку и селить в новый домик.</p>
               </div>
-            </li>
-          </ul>
-          <div class="slider__button-group button-group">
-            <div class="button-group__item button-item">.</div>
-            <div class="button-group__item button-item button-item--active">.</div>
-            <div class="button-group__item button-item">.</div>
-            <div class="button-group__item button-item">.</div>
-          </div>
+            </div>
+            <!-- Добавление стрелочек в HTML код -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -311,5 +308,7 @@
         <a class="copyright__link copyright-link" href="mailto:nina.mau.nsk@gmail.com">nina.mau.nsk@gmail.com</a>
       </div>
     </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+.questions-block {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}

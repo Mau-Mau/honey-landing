@@ -5,3 +5,12 @@
     padding: 0 100px 0 100px;
   }
 }
+
+.faq__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
