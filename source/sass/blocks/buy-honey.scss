@@ -15,7 +15,45 @@
   background-size: cover;
   padding: 40px 20px 40px 20px;
 
+  display: grid;
+  gap: 40px;
+
   @media(min-width: $tablet-width) {
     padding: 60px 66px 60px 66px;
+    grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.buy-honey__form {
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-end: 4;
+  }
+}
+
+.buy-honey__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.buy-honey__description {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.buy-honey__description:last-child {
+  margin-bottom: 0;
 }

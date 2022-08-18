@@ -1,0 +1,29 @@
+.order-form {
+  display: grid;
+  gap: 30px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+.order-form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-form__list.field-list--honey-variety {
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+  }
+}
+
+.order-form__price {
+  margin-bottom: 20px;
+}
+
+.order-form__actions {
+  margin-top: auto;
+}

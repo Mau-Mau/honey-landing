@@ -1,0 +1,25 @@
+.radio-button .text-input {
+  background-color: transparent;
+}
+
+.radio-button .text-input:hover {
+  background-color: transparent;
+}
+
+.radio-button__input:hover + .radio-button-label::before {
+  border-color: $color-blue-grey-dark;
+  background-color: $color-blue-grey-dark;
+}
+
+.radio-button__input:active + .radio-button-label::before {
+  border-color: $color-blue-grey-dark;
+  background-color: $color-blue-grey-dark;
+}
+
+.radio-button__input:checked + .radio-button-label::before {
+  background-color: $color-blue;
+}
+
+.radio-button__input:checked:active + .radio-button-label::before {
+  background-color: $color-blue-grey-light;
+}

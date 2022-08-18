@@ -1,0 +1,13 @@
+.price-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-block__description {
+  margin: 0;
+}
+
+.price-block__value {
+  margin: 0;
+}

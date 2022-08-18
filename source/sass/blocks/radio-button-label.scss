@@ -1,0 +1,18 @@
+.radio-button-label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-button-label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 15px solid $color-blue-grey-dark;
+  background-color: $color-blue-grey-dark;
+  border-radius: 50%;
+  cursor: pointer;
+}

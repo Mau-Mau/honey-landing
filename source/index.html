@@ -153,14 +153,8 @@
         <h2 class="gallery__title section-title title--section">Виды на пасеке</h2>
         <p class="gallery__description text-content">Здесь появляется наш вкусный и полезный мёд. Сбор начинается в конце июля.</p>
 
-
-
-
-        <!-- Swiper -->
         <div class="swiper-container">
-          <!-- Оболочка для слайдера -->
             <div class="swiper-wrapper">
-              <!-- Оболочка для отдельного слайда -->
               <div class="swiper-slide slider-item">
                   <img class="slider-item__image slider-image image" src="./img/apiary.jpg" width="335" height="auto" alt="Передвижная часть пасеки">
                   <p class="slider-item__description slider-description">Это часть наших домиков, которая перемещается по полям недалеко от поселка.</p>
@@ -178,7 +172,6 @@
                   <p class="slider-item__description slider-description">Летом нужно следить, не вылетел ли новый рой из домика. В этом случае нужно срочно садить его в роялку и селить в новый домик.</p>
               </div>
             </div>
-            <!-- Добавление стрелочек в HTML код -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
@@ -197,25 +190,25 @@
             <ul class="order-form__list field-list field-list--contacts">
               <li class="field-list__item field">
                 <label class="field__label" for="first-name">
-                  <span class="field__title field-title">Ваше имя*</span>
+                  <span class="field__title field-title">Ваше имя<span class="required">*</span></span>
                 </label>
                 <input class="field__input text-input" id="first-name" name="first-name" type="text" maxlength="50" placeholder="Кирилл" required>
               </li>
               <li class="field-list__item field">
                 <label class="field__label" for="family-name">
-                  <span class="field__title field-title">Ваша фамилия*</span>
+                  <span class="field__title field-title">Ваша фамилия<span class="required">*</span></span>
                 </label>
                 <input class="field__input text-input" id="family-name" name="family-name" type="text" maxlength="50" placeholder="Иванов" required>
               </li>
               <li class="field-list__item field">
                 <label class="field__label" for="phone">
-                  <span class="field__title field-title">Ваш номер телефона*</span>
+                  <span class="field__title field-title">Ваш номер телефона<span class="required">*</span></span>
                 </label>
                 <input class="field__input text-input" id="phone" name="phone" type="tel" placeholder="+7 (000) 000 00 00" required>
               </li>
               <li class="field-list__item field">
                 <label class="field__label" for="email">
-                  <span class="field__title field-title">Электронная почта*</span>
+                  <span class="field__title field-title">Электронная почта<span class="required">*</span></span>
                 </label>
                 <input class="field__input text-input" id="email" name="email" type="email" required>
               </li>
@@ -223,54 +216,56 @@
                 <label class="field__label" for="order-comment">
                   <span class="field__title field-title">Комментарии к заказу</span>
                 </label>
-                <textarea class="field__input text-input" id="order-comment" name="order-comment" rows="3" maxlength="150" placeholder="Ваше сообщение"></textarea>
+                <textarea class="field__input text-input text-input--order-comment" id="order-comment" name="order-comment" rows="5" maxlength="150" placeholder="Ваше сообщение"></textarea>
               </li>
             </ul>
 
-            <ul class="order-form__list field-list field-list--honey-variety">
-              <li class="field-list__item radio-button">
-                <input class="radio-button__input visually-hidden" id="buckwheat-honey" name="honey-variety" type="radio" value="buckwheat-honey" checked>
-                <label class="radio-button__label radio-button-label" for="buckwheat-honey">
-                  <span class="radio-button__title radio-title">Гречишный</span>
+            <div class="order-form__block">
+              <ul class="order-form__list field-list field-list--honey-variety">
+                <li class="field-list__item radio-button">
+                  <input class="radio-button__input visually-hidden" id="buckwheat-honey" name="honey-variety" type="radio" value="buckwheat-honey" checked>
+                  <label class="radio-button__label radio-button-label" for="buckwheat-honey">
+                    <span class="radio-button__title radio-title">Гречишный</span>
+                  </label>
+                </li>
+
+                <li class="field-list__item radio-button">
+                  <input class="radio-button__input visually-hidden" id="motley-grass-honey" name="honey-variety" type="radio" value="motley-grass-honey">
+                  <label class="radio-button__label radio-button-label" for="motley-grass-honey">
+                    <span class="radio-button__title radio-title">Разнотравье</span>
+                  </label>
+                </li>
+
+                <li class="field-list__item radio-button">
+                  <input class="radio-button__input visually-hidden" id="taiga-honey" name="honey-variety" type="radio" value="taiga-honey">
+                  <label class="radio-button__label radio-button-label" for="taiga-honey">
+                    <span class="radio-button__title radio-title">Таёжный</span>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="order-form__input field field--amount-of-liters">
+                <label class="field__label" for="amount-of-liters">
+                  <span class="field__title field-title">Количество литров<span class="required">*</span></span>
                 </label>
-              </li>
-
-              <li class="field-list__item radio-button">
-                <input class="radio-button__input visually-hidden" id="motley-grass-honey" name="honey-variety" type="radio" value="motley-grass-honey">
-                <label class="radio-button__label radio-button-label" for="motley-grass-honey">
-                  <span class="radio-button__title radio-title">Разнотравье</span>
-                </label>
-              </li>
-
-              <li class="field-list__item radio-button">
-                <input class="radio-button__input visually-hidden" id="taiga-honey" name="honey-variety" type="radio" value="taiga-honey">
-                <label class="radio-button__label radio-button-label" for="taiga-honey">
-                  <span class="radio-button__title radio-title">Таёжный</span>
-                </label>
-              </li>
-            </ul>
-
-            <div class="order-form__input field">
-              <label class="field__label" for="amount-of-liters">
-                <span class="field__title field-title">Количество литров</span>
-              </label>
-              <input class="field__input text-input" id="amount-of-liters" name="amount-of-liters" type="number" min="1" max="100" required>
-            </div>
-
-            <div class="order-form__summary order-summary">
-              <div class="order-form__price price-block">
-                <p class="price-block__description price-block-title">Цена</p>
-                <p class="price-block__value price-value">400 р.</p>
+                <input class="field__input text-input" id="amount-of-liters" name="amount-of-liters" type="number" min="1" max="100" required>
               </div>
-              <div class="order-form__total total-block">
-                <p class="total-block__description total-block-title">Стоимость</p>
-                <p class="total-block__value total-value">0 р.</p>
-              </div>
-            </div>
 
-            <div class="order-form__actions form-actions">
-              <button class="form-actions__submit button" type="submit">Отправить отзыв</button>
-              <p class="form-actions__description">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+              <div class="order-form__summary order-summary">
+                <div class="order-form__price price-block">
+                  <p class="price-block__description price-block-title">Цена</p>
+                  <p class="price-block__value price-value">400 р.</p>
+                </div>
+                <div class="order-form__total total-block">
+                  <p class="total-block__description total-block-title">Стоимость</p>
+                  <p class="total-block__value total-value">0 р.</p>
+                </div>
+              </div>
+
+              <div class="order-form__actions form-actions">
+                <button class="form-actions__submit button" type="submit">Отправить заявку</button>
+                <p class="form-actions__description">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+              </div>
             </div>
           </form>
         </div>

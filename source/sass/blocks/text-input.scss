@@ -4,10 +4,16 @@
   line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   border: 1.5px solid $color-white;
+  border-radius: 50px;
   background-color: $color-white;
   text-transform: none;
   box-sizing: border-box;
   color: $color-blue;
+  padding: 11px 20px 11px 20px;
+}
+
+.text-input--order-comment {
+  border-radius: 20px;
 }
 
 .text-input:hover {
