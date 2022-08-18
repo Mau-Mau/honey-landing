@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    justify-content: flex-end;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+}
