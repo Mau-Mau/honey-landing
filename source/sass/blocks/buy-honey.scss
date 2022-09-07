@@ -1,13 +1,13 @@
 .buy-honey {
   color: $color-white;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 100px 0 100px;
   }
 }
 
 .buy-honey__wrapper {
-  background-image: url("../../img/hives.jpg");
+  background-image: url("../img/hives.jpg");
   background-color: $color-green-dark;
   background-clip: border-box;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   display: grid;
   gap: 40px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 60px 66px 60px 66px;
     grid-template-columns: 1fr 1fr;
   }
@@ -29,7 +29,6 @@
 }
 
 .buy-honey__form {
-
   @media (min-width: $tablet-width) {
     grid-column-start: 2;
     grid-column-end: 3;
